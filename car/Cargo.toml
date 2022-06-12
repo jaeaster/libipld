@@ -1,0 +1,21 @@
+[package]
+name = "libipld-car"
+version = "0.13.1"
+authors = ["David Craven <david@craven.ch>"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+description = "ipld content archive codec"
+repository = "https://github.com/ipfs-rust/rust-ipld"
+
+[dependencies]
+anyhow = { version = "1.0.40", default-features = false }
+byteorder = "1.4.3"
+cid = { version = "0.8.3", default-features = false, features = ["alloc"] }
+libipld = { version = "0.13.0", path = ".." }
+libipld-core = { version = "0.13.0", path = "../core" }
+libipld-cbor = { version = "0.13.0", path = "../dag-cbor" }
+multihash = { version = "0.16.0", default-features = false, features = ["multihash-impl"] }
+thiserror = "1.0.25"
+unsigned-varint = "0.7.1"
+
+[dev-dependencies]

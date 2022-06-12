@@ -44,6 +44,7 @@ serde-codec = ["libipld-core/serde-codec"]
 
 [workspace]
 members = [
+  "car",
   "core",
   "dag-cbor",
   "dag-cbor-derive",
